@@ -1,9 +1,9 @@
 use std::sync::Arc;
 
-use adapter::{database::ConnectionPool, repository::health::HealthCheckRepositoryImpl};
 use adapter::repository::book::BookRepositoryImpl;
-use kernel::repository::health::HealthCheckRepository;
+use adapter::{database::ConnectionPool, repository::health::HealthCheckRepositoryImpl};
 use kernel::repository::book::BookRepository;
+use kernel::repository::health::HealthCheckRepository;
 
 #[derive(Clone)]
 pub struct AppRegistry {
